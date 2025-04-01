@@ -22,6 +22,7 @@ setup(
         'console_scripts': [
             'graph_publisher = ros2_control_viz.graph_publisher:main',
             'graph_subscriber = ros2_control_viz.graph_subscriber:main',
+            'web_socket_graph = ros2_control_viz.websocket_server:main',
         ],
     },
 )
