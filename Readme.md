@@ -8,6 +8,10 @@
     <br />
     <a href="https://ros-control-viz.vercel.app/">Try Demo</a>
   </p>
+  
+  <!-- Added Demo GIF placeholder -->
+  ![](Images/Demo_Basic_Web_1.gif)
+  <p><em>Demo: Real-time visualization of ROS 2 control system</em></p>
 </div>
  
 <!-- TABLE OF CONTENTS -->
@@ -42,6 +46,12 @@
 
 This project is a ROS 2-based Directed Acyclic Graph (DAG) visualizer that subscribes to a custom topic, processes incoming messages, and updates a graph dynamically. The graph is interactive, displays metadata, and distinguishes edges based on the message attributes.
 
+<!-- Added System Architecture Diagram placeholder -->
+<div align="center">
+  <img src="Images/Architecture.png" alt="System Architecture Diagram" />
+  <p><em>System Architecture: How the ROS 2 nodes interact with the web interface</em></p>
+</div>
+
 ### Built With
 
 - ![Next.js](https://img.shields.io/badge/Next.js-%23000000.svg?style=for-the-badge&logo=next-dot-js&logoColor=white)
@@ -63,6 +73,12 @@ This project is a ROS 2-based Directed Acyclic Graph (DAG) visualizer that subsc
   - **Command interface (`command_interface = true`)**: Edge is shown in a specific color.
   - **State interface (`state_interface = true`)**: Another distinct color.
   - **Hardware-based (`is_hardware = true`)**: Highlighted accordingly.
+
+<!-- Added visualization features demonstration placeholder -->
+<div align="center">
+  <img src="Images/Legend.png" alt="Visualization Features" />
+  <p><em>Visualization Features: Node metadata, edge coloring, and interactive elements</em></p>
+</div>
 
 ## Custom Message Definition
 
@@ -206,6 +222,12 @@ You should see output in the subscriber terminal showing the connections being p
 ...
 ```
 
+<!-- Added terminal output visualization placeholder -->
+<div align="center">
+  <img src="Images/Terminal_1.png" alt="Terminal Output" />
+  <p><em>Terminal Output: Subscriber (Left) receiving graph updates from publisher (Right)</em></p>
+</div>
+
 ### Basic Example with Web Interface Visualization
 
 This setup connects the graph publisher to a web interface for visual representation:
@@ -227,6 +249,12 @@ ros2 run ros2_control_viz graph_publisher
    - If running locally: http://localhost:3000
 
 You should see a live visualization of the graph with color-coded edges indicating command interfaces, state interfaces, and hardware components.
+
+<!-- Added web interface visualization placeholder -->
+<div align="center">
+  <img src="Images/Dynamic_Graph.gif" alt="Web Interface Visualization" />
+  <p><em>Live Graph: Dynamic visualization with color-coded edges and nodes</em></p>
+</div>
 
 **Visualization Legend:**
 
@@ -271,6 +299,12 @@ ros2 run ros2_control_viz turtle_graph_publisher
 5. Open the web interface at http://localhost:3000 (or the hosted demo)
 
 6. Use the arrow keys in the teleop terminal to control the turtle
+
+<!-- Added TurtleSim integration animation placeholder -->
+<div align="center">
+  <img src="Images/Turtlesim.gif" alt="TurtleSim Integration" />
+  <p><em>TurtleSim Integration: Real-time visualization of turtle movement and control flow</em></p>
+</div>
 
 The visualization will update in real-time, showing:
 
